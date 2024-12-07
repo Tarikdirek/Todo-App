@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-item" id="header">
+        <h2 class="title">TODO</h2>
+      </div>
+      <div class="grid-item" id="input-area">
+        <input type="text" id="inp-add" placeholder="Add a TODO" />
+        <button id="btn-add"><i class="bi bi-plus-circle"></i>Add</button>
+      </div>
+      <div class="grid-item" id="todo-area">
+        <h2 id="header2">TODO LIST</h2>
+        <input type="text" id="inp-search" placeholder="Search TODOs" />
+        <div class="grid-item">
+          <ul>
+          </ul>
+        </div>
+
+        <button id="btn-clr"><i class="bi bi-x-circle"></i>Clear</button>
+      </div>
+    </div>
+    <div class="container1"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {  
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 140px;
+  grid-auto-rows: 2fr;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+  background-color: white;
+  padding: 15px;
+  border-top: 2px solid lightgray;
+}
+
+#header {
+  background-color: whitesmoke;
+  color: black;
+}
+
+#header2 {
+    color: black;
+}
+
+
+#input-area,
+#todo-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#btn-add,
+#btn-clr {
+  width: 8em;
+  background-color: #0d6efd;
+  color: white;
+  border-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+#btn-add,#btn-clr > i{
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+#btn-add:hover {
+  background-color: rgb(33, 95, 95);
+  color: white;
+  border-bottom: rgb(33, 95, 95);
+}
+
+#btn-clr:hover{
+    background-color: red;
+    color: white;
+}
+
+#inp-add,
+#inp-search {
+  width: 100%;
+  outline-color: #0d6efd;
+  border-style: none;
+  border: 2px solid lightgray;
+  padding: 5px ;
+  border-radius: 5px;
+}
+
+ul li{
+    list-style: none;
+    color: black;
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    word-break: break-word;
+    margin: .5rem;
+}
+
+ul li > i {
+    cursor: pointer;
+    color:red;
+    font-size: 20px;
+}
+
+ul li > span {
+  flex: 1 1 auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+  margin-right: 5%;
+}
+
+
+@media only screen and (max-width:740px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:820px){
+    .container{
+        width: 80%;
+    }
+}
